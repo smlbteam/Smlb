@@ -5,4 +5,13 @@
     <color name="colorAccent">#607D8B</color>
     <color name="colorPrimary">#546E7A</color>
     <color name="colorPrimaryDark">#546E7A</color>
+    <color name="colorPrimaryLight">#CFD8DC</color>
+    <color name="divider">#ECECEC</color>
+
+    <color name="windowBackground">#fbfbfe</color>
+
+    <color name="text_white">#F1F1F1</color>
+    <color name="text_black">#737373</color>
+    <color name="text_grey">#9DA0A3</color>
+    <color name="text_blue">#5593bc</color>
 </resources>

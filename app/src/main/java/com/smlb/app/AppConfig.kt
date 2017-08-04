@@ -3,8 +3,8 @@ package com.smlb.app
 import android.content.Context
 import android.content.SharedPreferences
 import android.text.TextUtils
+import android.util.Log
 import com.smlb.utils.SPUtils
-
 
 
 /**
@@ -26,6 +26,7 @@ class AppConfig(context: Context) {
     private var mPreferences: SharedPreferences? = null
 
     init {
+        Log.i("Sunmeng", "context : " + context)
         mPreferences = context.getSharedPreferences(SPUtils.FILE_NAME, Context.MODE_PRIVATE)
         mToken = SPUtils.get(AppConstants.SP_ACCESS_TOKEN, "", mPreferences) as String
         mViewMode = SPUtils.get(AppConstants.SP_VIEW_MODE, AppConstants.VIEW_MODE_SMALL_WITH_INFO, mPreferences) as Int

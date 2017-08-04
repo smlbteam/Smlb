@@ -17,20 +17,15 @@ class SmlbApplication : Application() {
     companion object {
         lateinit var sAppConfig: AppConfig
         lateinit var instance: SmlbApplication
-
         fun getAppConfig(): AppConfig {
             return sAppConfig
         }
-
-    }
-
-    init {
-        instance = this
-        sAppConfig = AppConfig(this)
     }
 
     override fun onCreate() {
         super.onCreate()
+        instance = this
+        sAppConfig = AppConfig(applicationContext)
         Utils.init(applicationContext)
         Logger.addLogAdapter(AndroidLogAdapter())
         Hawk.init(applicationContext).build()
