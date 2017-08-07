@@ -10,13 +10,14 @@ import com.smlb.model.UserInfoModel
 import com.smlb.presenter.UserInfoPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : BaseMVPActivity<UserInfoPresenter, UserInfoModel>(), UserInfoContract.View {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
-        this.text.setOnClickListener { showToast("xxx") }
+        this.text.setOnClickListener {  }
     }
 
     override fun showLoading() {
