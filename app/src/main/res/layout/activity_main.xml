@@ -1,26 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.smlb.activity.MainActivity">
+    tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/register"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:layout_alignBaseline="@+id/text"
-        android:layout_alignBottom="@+id/text"
-        android:layout_toEndOf="@+id/text" />
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</RelativeLayout>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/DarkPopupTheme"
+                app:titleTextAppearance="@style/ToolbarTitleText"
+                app:titleTextColor="@color/text_white"/>
+
+            <LinearLayout
+                android:id="@+id/layout_main_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <com.smlb.widget.MaterialSpinner
+                    android:id="@+id/spinner_selector_type"
+                    style="@style/SpinnerSelectorText"
+                    android:text="@string/all"
+                    app:icon_padding="6dp"/>
+
+                <com.smlb.widget.MaterialSpinner
+                    android:id="@+id/spinner_selector_sort"
+                    style="@style/SpinnerSelectorText"
+                    android:text="@string/hot"
+                    app:icon_padding="6dp"/>
+
+                <com.smlb.widget.MaterialSpinner
+                    android:id="@+id/spinner_selector_time"
+                    style="@style/SpinnerSelectorText"
+                    android:text="@string/current"
+                    app:icon_padding="6dp"/>
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/container_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,6 +1,6 @@
 package com.smlb.model
 
-import com.smlb.Contract.UserInfoContract
+import com.smlb.contract.UserInfoContract
 import com.smlb.app.ApiClient
 import com.smlb.bean.UserEntity
 import io.reactivex.Observable

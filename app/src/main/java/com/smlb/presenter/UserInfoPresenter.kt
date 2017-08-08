@@ -1,8 +1,8 @@
 package com.smlb.presenter
 
-import com.smlb.Contract.UserInfoContract
 import com.smlb.base.mvp.BaseSubscriber
 import com.smlb.bean.UserEntity
+import com.smlb.contract.UserInfoContract
 
 
 /**

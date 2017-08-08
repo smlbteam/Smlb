@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialSpinner">
+        <attr name="icon_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProportionImageView">
+        <attr name="proportion_w_h" format="float"/>
+    </declare-styleable>
+
+</resources>

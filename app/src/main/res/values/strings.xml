@@ -3,4 +3,10 @@
 
     <string name="register">注册</string>
     <string name="login">登录</string>
+    <string name="all">全部</string>
+    <string name="hot">最热</string>
+    <string name="current">当前</string>
+    <string name="btn_login">登录</string>
+    <string name="hello_dribbble">Hello Dribbble！</string>
+    <string name="login_description">登录 Dribbble 立即体验所有功能</string>
 </resources>

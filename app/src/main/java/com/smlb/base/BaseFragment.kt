@@ -8,7 +8,6 @@ import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import butterknife.ButterKnife
 import com.smlb.utils.SnackbarUtils
 
 
@@ -32,7 +31,6 @@ abstract class BaseFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         mRootView = inflater!!.inflate(getLayoutId(), container, false)
-        ButterKnife.bind(this, mRootView as View)
         return mRootView
     }
 

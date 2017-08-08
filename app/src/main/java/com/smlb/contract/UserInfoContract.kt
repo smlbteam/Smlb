@@ -1,4 +1,4 @@
-package com.smlb.Contract
+package com.smlb.contract
 
 import com.smlb.base.mvp.BaseModel
 import com.smlb.base.mvp.BasePresenter

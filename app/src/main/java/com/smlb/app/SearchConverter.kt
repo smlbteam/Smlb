@@ -70,7 +70,7 @@ class SearchConverter : Converter<ResponseBody, List<ShotsEntity>> {
         }
         val matchId = PATTERN_PLAYER_ID.matcher(avatarUrl)
         var id = -1
-        if (matchId.find() && matchId.groupCount() === 1) {
+        if (matchId.find() && matchId.groupCount() == 1) {
             id = Integer.parseInt(matchId.group(1))
         }
         val slashUsername = userBlock.attr("href")

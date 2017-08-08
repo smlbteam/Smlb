@@ -22,7 +22,7 @@ import com.smlb.widget.CustomLoadMore
  * Description:
  */
 
-abstract class BaseMVPListFragment<P : BasePresenter<M, *>, M : BaseModel> : BaseFragment() {
+abstract class BaseMVPListFragment<P : BasePresenter<*, *>, M : BaseModel> : BaseFragment() {
 
     var mPresenter: P? = null
     var mModel: M? = null

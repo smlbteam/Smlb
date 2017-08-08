@@ -55,6 +55,6 @@ abstract class BaseSubscriber<T> : Observer<T> {
 
     protected abstract fun onSuccess(t: T)
 
-    protected fun onFail(msg: String) {}
+    protected open fun onFail(msg: String) {}
 
 }
